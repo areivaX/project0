@@ -1,0 +1,31 @@
+$mainText : #3c3b5f;
+$hLight : #F8CA9D;
+$brightText : #FA6E4F;
+$softText : #FB8E7E;
+$backGround : #8EC9BB;
+$pale_backGround : #C5D7C0;
+
+body { background-color: $pale_backGround; }
+
+.navbar-custom {
+      background-color: $backGround;
+    .navbar-brand, .navbar-text {
+      color: $softText ;
+      font-weight: bold;
+    }
+}
+
+.textCombo1 {
+  color : $mainText;
+  padding-left : 3%;
+}
+
+.tooLong {
+  display: none;
+}
+
+@media (min-width: 500px) {
+}
+
+@media (max-width:499px) {
+}

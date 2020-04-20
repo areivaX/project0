@@ -1,0 +1,22 @@
+body {
+  background-color: #C5D7C0;
+}
+
+.navbar-custom {
+  background-color: #8EC9BB;
+}
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text {
+  color: #FB8E7E;
+  font-weight: bold;
+}
+
+.textCombo1 {
+  color: #3c3b5f;
+  padding-left: 3%;
+}
+
+.tooLong {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
