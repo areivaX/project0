@@ -53,6 +53,24 @@ body { background-color: $pale_backGround; }
     animation-timing-function: linear;
 }
 
+@-webkit-keyframes updown {
+    from {
+        top: -135px;
+    }
+    to {
+        top: 850px;
+    }
+}
+
+@keyframes updown {
+    from {
+        top: -315px;
+    }
+    to {
+        top: 850px;
+    }
+}
+
 
 .navbar>a:hover {
     background-color: $hLight;
