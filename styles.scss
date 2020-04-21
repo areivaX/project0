@@ -1,15 +1,29 @@
 $mainText : #3c3b5f;
+$pale_backGround : #C5D7C0;
+
+
 $hLight : #F8CA9D;
 $brightText : #FA6E4F;
 $softText : #FB8E7E;
 $backGround : #8EC9BB;
-$pale_backGround : #C5D7C0;
+$outLine : white;
+$linkColor : black;
 
 body { background-color: $pale_backGround; }
 
 ::selection {
   color: $mainText;
   background: $hLight;
+}
+
+.textCombo1 {
+  color : $mainText;
+  padding : 2%;
+}
+
+%textCombo2 {
+  background-color: $backGround;
+  color: $softText;
 }
 
 @media (max-width: 767px) {
@@ -30,12 +44,19 @@ body { background-color: $pale_backGround; }
 }
 
 .navbar-custom {
-      background-color: $backGround;
+      @extend %textCombo2;
     .navbar-brand, .navbar-text {
-      color: $softText ;
+      color:inherit;
       font-weight: bold;
     }
 }
+
+.collapse.navbar-collapse li a {
+  color: $brightText;
+  background-color: $backGround;
+}
+
+
 
 .disclaimer {
     transform: rotate(90deg);
@@ -77,13 +98,50 @@ body { background-color: $pale_backGround; }
         color: $mainText;
     }
 
-.textCombo1 {
-  color : $mainText;
-  padding : 2%;
-}
+
 
 .tooLong {
   display: none;
+}
+
+.row > div {
+   @extend %textCombo2;
+    padding: 20px;
+    border: 4px solid $outLine;
+
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.image-group-container {
+    overflow: scroll;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+%solo-photo {
+    max-height: 100%;
+    max-width: 70%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: solid black 15px;
+}
+
+.solo-photo-small {
+   @extends %solo-photo;
+    max-height: 70%;
+    max-width: 45%;
+
+}
+
+.col-md-12 {
+    margin-bottom: 70px;
+}
+
+.right-rail {
+    margin-top: 160px;
 }
 
 @media (min-width: 500px) {

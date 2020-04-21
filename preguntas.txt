@@ -1,0 +1,3 @@
+Why don't the navbar links (which should
+also be selected by li a) also get an updated
+color scheme? 
