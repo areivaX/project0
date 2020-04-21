@@ -1,3 +1,10 @@
 Why don't the navbar links (which should
 also be selected by li a) also get an updated
-color scheme? 
+color scheme?
+
+
+TODO:
+
+make the about photo center
+
+http://www.thisismymom.online/pictures
