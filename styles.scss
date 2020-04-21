@@ -1,0 +1,205 @@
+$mainText : #3c3b5f;
+$pale_backGround : #C5D7C0;
+
+
+$hLight : #F8CA9D;
+$brightText : #FA6E4F;
+$brighterText : #FB8E7E;
+$backGround : #8EC9BB;
+$outLine : white;
+$linkColor : black;
+
+body { background-color: $pale_backGround; }
+
+::selection {
+  color: $mainText;
+  background: $hLight;
+}
+
+.textCombo1 {
+  color : $mainText;
+}
+
+%textCombo2 {
+  background-color: $backGround;
+  color: $brightText;
+}
+
+p {color: $mainText }
+
+.table {
+  color : $mainText
+}
+
+h1 {
+  color: $mainText;
+  margin-top: 20px;
+  margin-left : 70px;
+  text-align: left;
+}
+
+h2 {
+  color: $brightText;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.resource-list {
+  color: $mainText
+}
+
+@media (max-width: 767px) {
+  .nav>li>a.dropdown-toggle {
+    display: none;
+  }
+  .nav .dropdown-menu {
+    display:block;
+        position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.navbar-custom {
+      @extend %textCombo2;
+    .navbar-brand, .navbar-text {
+      color:inherit;
+      font-weight: bold;
+      padding-right: 5px;
+    }
+}
+
+.collapse.navbar-collapse a {
+  color: $brightText;
+  background-color: $backGround;
+}
+
+.collapse.navbar-collapse a:hover {
+    background-color: $hLight;
+        color: $mainText;
+    }
+
+
+
+.disclaimer {
+    transform: rotate(90deg);
+    position: fixed;
+    top: 40%;
+    right: -140px;
+    z-index: 500;
+    -webkit-animation: updown 11s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: updown 11s;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes updown {
+    from {
+        top: -135px;
+    }
+    to {
+        top: 850px;
+    }
+}
+
+@keyframes updown {
+    from {
+        top: -315px;
+    }
+    to {
+        top: 850px;
+    }
+}
+
+
+.navbar>a:hover {
+    background-color: $hLight;
+        color: $mainText;
+    }
+
+
+
+.tooLong {
+  display: none;
+}
+
+.row > div {
+   @extend %textCombo2;
+    padding: 30px;
+    border: 10px solid $outLine;
+
+    h4 {
+      color : $brightText;
+    }
+    ul {
+      color : $mainText;
+    }
+
+    span {
+      color : $brightText;
+      font-style: italic;
+    }
+    a:link {
+      color:$brightText ;
+    }
+}
+
+span.emphasis {
+  color : $brighterText;
+  font-weight : bold;
+}
+
+
+
+.container {
+  margin-top: 40px;
+}
+
+
+
+.image-group-container {
+    overflow: scroll;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+%solo-photo0 {
+    max-height: 100%;
+    max-width: 70%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: solid $outLine 15px;
+}
+
+.solo-photo {
+    @extend %solo-photo0;
+}
+
+.solo-photo-small {
+  @extend %solo-photo0;
+  max-height: 70%;
+  max-width: 50%;
+}
+
+
+
+.startScroll {
+    margin-top: 60px;
+    text-align:center;
+}
+
+@media (min-width: 500px) {
+}
+
+@media (max-width:499px) {
+}

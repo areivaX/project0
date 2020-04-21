@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+
+
+
+
+
+  <div class="container">
+      <div class="row justify-content-md-left">
+        <div class="col-sm-auto">
+          <h4> temas </h4>
+          <hr color = white noshade> </hr>
+          <ul >
+            {% for tema in temas %}
+              <li>
+                <a href=#{{tema}}> {{ tema }} </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+    </div>
+    </div>
+
+<div class="container">
+      <h2 id='math'> math resources </h2>
+      <p>
+        please let the records show that I failed some of these classes, so take with a grain of salt: </p>
+        <ul class="resource-list">
+
+          <li> topology </li>
+            <ul>
+              <li> <a href="https://www.ljll.math.upmc.fr/abadiej/documents/3M260-2016/Topologie_FredericLeRoux.pdf" > polycopié le roux </a> </li>
+              <li> topologie et analyze fonctionnelle Y. Sonntag </li>
+              <li> ENS <a href='https://www.math.ens.fr/enseignement/archives_pedagogiques.html' > exams </a> </li>
+
+            </ul>
+
+            <li> abstract algebra </li>
+              <ul>
+                <li> detailed corrected <a href='https://yutsumura.com/tag/abelian-group/' > exercises </a> </li>
+                <li> corrected <a href="https://webusers.imj-prg.fr/~daniel.bertrand/Enseignement/enseignement.html"> exams </a> </li>
+              </ul>
+
+            <li> complex analysis </li>
+                  <ul>
+                    <li> a good <a href= http://pipad.org/tmp/Needham.visual-complex-analysis.pdf> book </a>: visual complex analysis </li>
+                    <li> and <a href='https://sites.google.com/site/vascoprat/needham/chapter-1 ' > its solutions </a> </li>
+                  </ul>
+
+            <li> proba </li>
+                      <ul>
+                        <li> <a href='https://www.lpsm.paris/dw/doku.php?id=users:berger:3m246' > controles et examens </a> </li>
+                      </ul>
+
+            <li> complex analysis </li>
+                <ul>
+                  <li> <a href='#' > polycopié le roux </a> </li>
+                </ul>
+
+</div>
+
+<div class="container">
+      <h2 id='French'> French resources </h2>
+
+        <ul class="resource-list">
+        <li> a venir! </li>
+        </ul>
+
+</div>
+
+<div class="container">
+      <h2 id='Spanish'> Spanish resources </h2>
+
+        <ul class="resource-list">
+        <li> a venir! </li>
+        </ul>
+
+</div>
+
+<div class="container">
+      <h2 id='Japanese'> 日本語 </h2>
+
+        <ul class="resource-list">
+        <li> <a href="jisho.org"> excellent online dictionary </a> </li>
+        </ul>
+
+</div>
+
+
+{% endblock %}

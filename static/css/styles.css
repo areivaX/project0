@@ -16,11 +16,29 @@ body {
   color: #FA6E4F;
 }
 
+p {
+  color: #3c3b5f;
+}
+
+.table {
+  color: #3c3b5f;
+}
+
 h1 {
-  color: #FA6E4F;
+  color: #3c3b5f;
   margin-top: 20px;
   margin-left: 70px;
   text-align: left;
+}
+
+h2 {
+  color: #FA6E4F;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.resource-list {
+  color: #3c3b5f;
 }
 
 @media (max-width: 767px) {
@@ -46,9 +64,14 @@ h1 {
   padding-right: 5px;
 }
 
-.collapse.navbar-collapse li a {
-  color: #FB8E7E;
+.collapse.navbar-collapse a {
+  color: #FA6E4F;
   background-color: #8EC9BB;
+}
+
+.collapse.navbar-collapse a:hover {
+  background-color: #F8CA9D;
+  color: #3c3b5f;
 }
 
 .disclaimer {
