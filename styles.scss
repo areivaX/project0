@@ -37,6 +37,22 @@ body { background-color: $pale_backGround; }
     }
 }
 
+.disclaimer {
+    transform: rotate(90deg);
+    position: fixed;
+    top: 40%;
+    right: -140px;
+    z-index: 500;
+    -webkit-animation: updown 11s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: updown 11s;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
 
 .navbar>a:hover {
     background-color: $hLight;
