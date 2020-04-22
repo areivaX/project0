@@ -60,6 +60,7 @@ h2 {
     margin-top: 0;
     background-color: transparent;
     border: 0;
+
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -86,39 +87,8 @@ h2 {
 
 
 
-.disclaimer {
-    transform: rotate(90deg);
-    position: fixed;
-    top: 40%;
-    right: -140px;
-    z-index: 500;
-    -webkit-animation: updown 11s;
-    /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: infinite;
-    /* Safari 4.0 - 8.0 */
-    animation: updown 11s;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-}
 
-@-webkit-keyframes updown {
-    from {
-        top: -135px;
-    }
-    to {
-        top: 850px;
-    }
-}
 
-@keyframes updown {
-    from {
-        top: -315px;
-    }
-    to {
-        top: 850px;
-    }
-}
 
 
 .navbar>a:hover {
@@ -128,14 +98,14 @@ h2 {
 
 
 
-.tooLong {
-  display: none;
-}
+
 
 .row > div {
    @extend %textCombo2;
     padding: 30px;
+    margin: 20px;
     border: 10px solid $outLine;
+    border-radius: 25px;
 
     h4 {
       color : $brightText;
@@ -180,6 +150,7 @@ span.emphasis {
     margin-top: 15px;
     margin-bottom: 10px;
     border: solid $outLine 15px;
+
 }
 
 .solo-photo {
