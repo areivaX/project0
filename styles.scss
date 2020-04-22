@@ -198,8 +198,20 @@ span.emphasis {
     text-align:center;
 }
 
-@media (min-width: 500px) {
+.card {
+  margin-top: 50px;
+  margin-left:5%;
+  margin-bottom:10%;
+  background-color: $backGround;
+  color:$mainText;
+
+  h5 {color: $brightText;
+      font-weight:bold; }
+
 }
 
-@media (max-width:499px) {
+
+
+@media (max-width:600px) {
+  .card { display : none; }
 }

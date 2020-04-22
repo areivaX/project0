@@ -167,4 +167,22 @@ span.emphasis {
   text-align: center;
 }
 
+.card {
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  background-color: #8EC9BB;
+  color: #3c3b5f;
+}
+.card h5 {
+  color: #FA6E4F;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .card {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
