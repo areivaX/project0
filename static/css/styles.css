@@ -82,8 +82,7 @@ h2 {
 .row > div {
   padding: 30px;
   margin: 20px;
-  border: 10px solid white;
-  border-radius: 25px;
+  border: 4px solid white;
 }
 .row > div h4 {
   color: #FA6E4F;
